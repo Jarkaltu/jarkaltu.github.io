@@ -1,114 +1,103 @@
-/* General Box Sizing */
+/* Reset some default browser styling */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body Styles */
+/* General body styling */
 body {
-  margin: 0;
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Clearfix Utility */
-.clearfix {
-  clear: both;
+/* Container class for layout */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-/* Header Banner Styles */
-.header-banner {
-  padding-top: 35px;
-  padding-bottom: 100px;
-  color: #ffffff;
-  font-family: Helvetica, serif;
-  font-weight: 100;
-  background-image: url("https://grapesjs.com/img/bg-gr-v.png"), url("https://grapesjs.com/img/work-desk.jpg");
-  background-attachment: scroll, scroll;
-  background-position: left top, center center;
-  background-repeat: repeat-y, no-repeat;
-  background-size: contain, cover;
+/* Header styling */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
 }
 
-/* Container Width */
-.container-width {
-  width: 90%;
-  max-width: 1150px;
-  margin: 0 auto;
+header h1 {
+    float: left;
+    margin-top: 0;
 }
 
-/* Logo Container */
-.logo-container {
-  float: left;
-  width: 50%;
+header nav {
+    float: right;
+    margin-top: 10px;
 }
 
-/* Menu Styles */
-.menu {
-  float: right;
-  width: 50%;
+header nav ul {
+    list-style: none;
 }
 
-/* Menu Item Styles */
-.menu-item {
-  float: right;
-  font-size: 15px;
-  color: #eee;
-  width: 130px;
-  padding: 10px;
-  min-height: 50px;
-  text-align: center;
-  line-height: 30px;
-  font-weight: 400;
+header nav ul li {
+    display: inline;
+    margin-left: 10px;
 }
 
-/* Lead Title Styles */
-.lead-title {
-  margin: 150px 0 30px 0;
-  font-size: 40px;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Sub Lead Title Styles */
-.sub-lead-title {
-  max-width: 650px;
-  line-height: 30px;
-  margin-bottom: 30px;
-  color: #c6c6c6;
+/* Main section styling */
+main {
+    padding: 20px 0;
 }
 
-/* Lead Button Styles */
-.lead-btn {
-  margin-top: 15px;
-  padding: 10px;
-  width: 190px;
-  min-height: 30px;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 3px;
-  line-height: 30px;
-  background-color: #d983a6;
-  border-radius: 5px;
-  transition: all 0.5s ease;
-  cursor: pointer;
+main h2 {
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.lead-btn:hover {
-  background-color: #ffffff;
-  color: #4c114e;
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.lead-btn:active {
-  background-color: #4d114f;
-  color: #fff;
+form label {
+    margin-top: 10px;
 }
 
-/* Flex Section Styles */
-.flex-sect {
-  background-color: #fafafa;
-  padding: 100px 0;
-  font-family: Helvetica, serif;
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.flex-title {
-  margin-bottom: 15px;
-  font-size: 2em;
-  text-align: center;
-  font-weight: 700;
- 
+form button {
+    background-color: #0779e4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #055a8c;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
