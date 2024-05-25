@@ -81,22 +81,112 @@
 
 
     <!-- Contact section -->
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to work with us, please feel free to reach out through our contact form below.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes Side by Side with Contact</title>
+    <style>
+        /* Main container to hold all sections */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        /* Flex container to hold the main content sections */
+        .flex-container {
+            display: flex;
+            flex: 3;
+            justify-content: space-around;
+            margin-right: 20px;
+        }
+
+        /* Individual box styling */
+        .flex-container section, .contact-container section {
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .flex-container {
+                flex-direction: column;
+                margin-right: 0;
+            }
+            .contact-container {
+                margin-top: 20px;
+            }
+        }
+
+        /* Contact container styling */
+        .contact-container {
+            flex: 1;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea, button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="flex-container">
+            <!-- About Us section -->
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Mija Group is a small manufacturing and trading business specializing in textile products and the fashion industry. We are dedicated to delivering high-quality products and exceptional service to our clients.</p>
+            </section>
+
+            <!-- Services section -->
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>We offer a range of services including textile manufacturing, brand representation, and market distribution. Our expertise lies in understanding the fashion trends and meeting the market demands efficiently.</p>
+            </section>
+
+            <!-- Brands section -->
+            <section id="brands">
+                <h2>Our Brands</h2>
+                <p>We own the prestigious brands Hoffmann and Beck, and proudly represent several renowned brands from France and Italy in the Baltic market. Our portfolio showcases a blend of quality and style, catering to diverse customer preferences.</p>
+            </section>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact section -->
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to work with us, please feel free to reach out through our contact form below.</p>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
+
 
     <!-- Footer section -->
     <footer>
