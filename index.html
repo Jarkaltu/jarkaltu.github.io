@@ -5,88 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mija Group</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header section -->
-    <header>
-        <div class="container">
-            <h1>Mija Group</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#brands">Brands</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main section -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three Boxes Side by Side</title>
-    <style>
-        /* Flex container to hold the sections */
-        .flex-container {
-            display: flex;
-            justify-content: space-around; /* Space between the boxes */
-            margin: 20px;
-        }
-
-        /* Individual box styling */
-        .flex-container section {
-            flex: 1; /* Allow the sections to grow equally */
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-            background-color: #f9f9f9;
-        }
-
-        /* Ensure responsiveness */
-        @media (max-width: 768px) {
-            .flex-container {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="flex-container">
-        <!-- About Us section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Mija Group is a small manufacturing and trading business specializing in textile products and the fashion industry. We are dedicated to delivering high-quality products and exceptional service to our clients.</p>
-        </section>
-
-        <!-- Services section -->
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer a range of services including textile manufacturing, brand representation, and market distribution. Our expertise lies in understanding the fashion trends and meeting the market demands efficiently.</p>
-        </section>
-
-        <!-- Brands section -->
-        <section id="brands">
-            <h2>Our Brands</h2>
-            <p>We own the prestigious brands Hoffmann and Beck, and proudly represent several renowned brands from France and Italy in the Baltic market. Our portfolio showcases a blend of quality and style, catering to diverse customer preferences.</p>
-        </section>
-    </div>
-</body>
-</html>
-
-
-    <!-- Contact section -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Box</title>
     <style>
         /* Main container to hold the sections */
         .main-container {
@@ -101,6 +19,17 @@
             flex: 3;
             justify-content: space-around;
             margin-right: 20px;
+        }
+
+        /* Individual box styling */
+        .flex-container section {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
         }
 
         /* Contact container styling */
@@ -129,29 +58,60 @@
         }
 
         /* Form styling */
-        form {
+        .contact-container form {
             display: flex;
             flex-direction: column;
         }
-        label, input, textarea, button {
+
+        .contact-container form label,
+        .contact-container form input,
+        .contact-container form textarea,
+        .contact-container form button {
             margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Mija Group</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main section -->
     <div class="main-container">
+        <!-- Content section -->
+        <div class="flex-container">
+            <!-- About Us section -->
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Mija Group is a small manufacturing and trading business specializing in textile products and the fashion industry. We are dedicated to delivering high-quality products and exceptional service to our clients.</p>
+            </section>
+
+            <!-- Services section -->
+            <section id="services">
+                <h2>Our Services</h2>
+                <p>We offer a range of services including textile manufacturing, brand representation, and market distribution. Our expertise lies in understanding the fashion trends and meeting the market demands efficiently.</p>
+            </section>
+
+            <!-- Brands section -->
+            <section id="brands">
+                <h2>Our Brands</h2>
+                <p>We own the brands Hoffmann and Beck, PAUL and proudly represent several brands from France and Italy in the Baltic market. Our portfolio showcases a blend of quality and style, catering to diverse customer preferences.</p>
+            </section>
+        </div>
+
         <!-- Contact section -->
-       /* Contact container styling */
-.contact-container {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-    background-color: #f9f9f9;
-    /* Align to the right */
-    align-self: flex-start;
+        <div class="contact-container">
             <section id="contact">
                 <h2>Contact Us</h2>
                 <p>If you have any questions or would like to work with us, please feel free to reach out through our contact form below.</p>
@@ -170,10 +130,6 @@
             </section>
         </div>
     </div>
-</body>
-</html>
-
-
 
     <!-- Footer section -->
     <footer>
