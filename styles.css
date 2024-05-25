@@ -1,8 +1,8 @@
 /* General Styles - applies to the entire website */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a; /* Dark background for modern look */
-    color: #f5f5f5; /* Light text for contrast */
+    background-color: #ffffff; /* background for modern look */
+    color: #153d3b; /* Light text for contrast */
     margin: 0;
     padding: 0;
     line-height: 1.6;
