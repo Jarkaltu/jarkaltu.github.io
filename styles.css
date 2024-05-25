@@ -1,59 +1,82 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-/* Header Styles */
 header {
-    background-color: #1a237e;
-    padding: 1rem 0;
+    background-color: #121212;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin-left: 1.5rem;
 }
 
 nav ul li a {
-    color: #e0e0e0;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
-    color: #ffab40;
+    color: #f39c12;
 }
 
-/* Section Styles */
-section {
-    padding: 2rem;
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     text-align: center;
+    color: #fff;
 }
 
-section h1, section h2 {
-    color: #ffab40;
+.hero h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-section p {
+.hero p {
+    font-size: 1.2rem;
     max-width: 600px;
-    margin: 0 auto 2rem;
 }
 
-/* Form Styles */
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    color: #f39c12;
+    margin-bottom: 1rem;
+}
+
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -71,22 +94,22 @@ form input, form textarea {
     margin-bottom: 1rem;
     border: none;
     border-radius: 4px;
-    background-color: #303f9f;
-    color: #e0e0e0;
+    background-color: #333;
+    color: #f5f5f5;
 }
 
 form button {
-    display: block;
     width: 100%;
     padding: 0.75rem;
     border: none;
     border-radius: 4px;
-    background-color: #ffab40;
+    background-color: #f39c12;
     color: #121212;
     font-size: 1rem;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #ff8f00;
+    background-color: #e67e22;
 }
+
