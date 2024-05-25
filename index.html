@@ -23,25 +23,62 @@
     </header>
 
     <!-- Main section -->
-    <main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Boxes Side by Side</title>
+    <style>
+        /* Flex container to hold the sections */
+        .flex-container {
+            display: flex;
+            justify-content: space-around; /* Space between the boxes */
+            margin: 20px;
+        }
+
+        /* Individual box styling */
+        .flex-container section {
+            flex: 1; /* Allow the sections to grow equally */
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+        }
+
+        /* Ensure responsiveness */
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
         <!-- About Us section -->
-        <section id="about" class="container">
+        <section id="about">
             <h2>About Us</h2>
             <p>Mija Group is a small manufacturing and trading business specializing in textile products and the fashion industry. We are dedicated to delivering high-quality products and exceptional service to our clients.</p>
         </section>
 
         <!-- Services section -->
-        <section id="services" class="container">
+        <section id="services">
             <h2>Our Services</h2>
             <p>We offer a range of services including textile manufacturing, brand representation, and market distribution. Our expertise lies in understanding the fashion trends and meeting the market demands efficiently.</p>
         </section>
 
         <!-- Brands section -->
-        <section id="brands" class="container">
+        <section id="brands">
             <h2>Our Brands</h2>
             <p>We own the prestigious brands Hoffmann and Beck, and proudly represent several renowned brands from France and Italy in the Baltic market. Our portfolio showcases a blend of quality and style, catering to diverse customer preferences.</p>
         </section>
-    </main>
+    </div>
+</body>
+</html>
+
 
     <!-- Contact section -->
     <section id="contact" class="container">
